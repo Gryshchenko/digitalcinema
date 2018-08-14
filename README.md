@@ -13,6 +13,11 @@ once the download is completed, but will be able to stream directly the video fe
 For client JS - React/Redux
 For back-end Php/JS - Laravel/Node for streaming
 
+### For testing use:
+1. https://hypertube.vgryshchenko.work
+2. Login: test
+3. password: Test12
+
 ### OAuth
 ![OAuth](/gif/auth.gif)
 
