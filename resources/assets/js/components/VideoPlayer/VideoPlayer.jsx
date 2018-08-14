@@ -30,7 +30,7 @@ class VideoPlayer extends Component  {
 				'kind': 'subtitles',
 				'srcLang': arr.language
 			}));
-			SubtitlesArr.forEach( function(obj) { obj.src = 'http://localhost:8100/movies/'+ obj['imdb-id'] + '/' + obj.language + '.vtt'; } );
+			SubtitlesArr.forEach( function(obj) { obj.src = 'https://hypertube.vgryshchenko.work/movies/'+ obj['imdb-id'] + '/' + obj.language + '.vtt'; } );
 			this.setState({subtitlesArr: SubtitlesArr});
 
 		}

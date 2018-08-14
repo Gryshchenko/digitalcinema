@@ -20,7 +20,7 @@ class OAuth extends Component  {
 			grant_type: 'authorization_code',
 			client_id: '424d0c7fac1ed02048e197dda88a5e1a8fb60bd8a4420659d6096f8fbb2a1c73',
 			client_secret: 'f04df732742a66153a3e2f2ebbc63370f7e0f62c4a30d70f1052eced5c66810a',
-			redirect_uri: 'http://localhost:8100',
+			redirect_uri: 'https://hypertube.vgryshchenko.work/',
 			code: code
 		};
 
@@ -34,7 +34,7 @@ class OAuth extends Component  {
 				var stringa = 'https://api.intra.42.fr/v2/me?access_token=' + result.access_token;
 				axios.get(stringa).then(response => {
 
-					axios.post('http://localhost:8100/auth/osignup', {email : response.data.email, firstname : response.data.first_name, lastname : response.data.last_name, img : response.data.image_url}).then(response => {
+					axios.post('https://hypertube.vgryshchenko.work/auth/osignup', {email : response.data.email, firstname : response.data.first_name, lastname : response.data.last_name, img : response.data.image_url}).then(response => {
 
 						localStorage.setItem('accessToken', response.data);
 						history.push('/#/library');

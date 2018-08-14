@@ -81,7 +81,7 @@ class ViewProfile extends Component  {
 				}
 			)
 		});*/
-		axios.post('http://localhost:8100/profile/get-history', {'user_id' : user.uid}).then ((result) => {
+		axios.post('https://hypertube.vgryshchenko.work/profile/get-history', {'user_id' : user.uid}).then ((result) => {
 			this.setState({'links': result.data});
 		})
 	}
